@@ -1,0 +1,79 @@
+
+:root {
+    --color: #f9b728;
+    --seccolor:	#ffd94d;
+    --tertcolor: #eadbc1;
+    --quadcolor: #719331;
+    --pentcolor:#59712d;
+    --hexcolor: #FFFACD
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    font-family: "anton", serif;
+    font-size: 10vh;
+    color: var(--pentcolor);
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: var(--quadcolor);
+}
+
+.loginsignup{display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20vh;}
+
+.loginsignup form{display: flex;
+flex-direction: column;
+gap: 5vh;}
+
+.loginsignup form input{ width: 40vw;
+height: 5vh;
+text-align: center;
+font-family: "poppins",serif;
+text-transform: capitalize;
+font-size: 15px;
+font-weight: 600;}
+
+.orLogin{width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 20px;
+    font-weight: 800;
+    border: 1px solid var(--pentcolor);
+    border-radius: 10px;
+   padding: 1vh 1vh;
+    color: var(--quadcolor);
+    background-color: var(--tertcolor);
+cursor: pointer;
+font-family: "poppins",serif;}
+
+.orLogin:hover{background-color: var(--color);}
+
+.submit{width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 20px;
+    font-weight: 800;
+    border: 1px solid var(--pentcolor);
+    border-radius: 20px;
+   padding: 2vh 2vh;
+    color: var(--pentcolor);
+    background-color: var(--tertcolor);
+cursor: pointer;
+font-family: "poppins",serif;}
+
+.submit:hover{background-color: var(--seccolor);}
+
+
+

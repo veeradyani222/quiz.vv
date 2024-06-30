@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="topics.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- above ones for the poppins font -->
+
+<body>
+    <div id="name"></div>
+    <div class="heading">Select a topic to start the quiz</div>
+    <div class="container">
+        <div class="cont" id="maths" onclick="mathQuiz()">
+            <div class="box"><img src="mathsquiz.png" alt=""></div>
+            <div class="topics">Mathematics</div>
+        </div>
+        <div class="cont" id="phy" onclick="phyQuiz()"><img src="physicsquiz.png" alt="">
+            <div class="topics">physics</div>
+        </div>
+        <div class="cont" id="chem" onclick="chemQuiz()"><img src="chemistryquiz.png" alt="">
+            <div class="topics">chemistry</div>
+        </div>
+        <div class="cont" id="bio" onclick="bioQuiz()"><img src="biologyquiz.png" alt="">
+            <div class="topics">biology</div>
+        </div>
+        <div class="cont" id="history" onclick="historyQuiz()"><img src="historyquiz.png" alt="">
+            <div class="topics"> Indian History</div>
+        </div>
+        <div class="cont" id="geography" onclick="geographyQuiz()"><img src="geographyquiz.png" alt="">
+            <div class="topics">geography</div>
+        </div>
+        <div class="cont" id="indlit" onclick="indLitQuiz()"><img src="indliteraturequiz.png" alt="">
+            <div class="topics">indian literature</div>
+        </div>
+        <div class="cont" id="art" onclick="artQuiz()"><img src="artquiz.png" alt="">
+            <div class="topics">art</div>
+        </div>
+        <div class="cont" id="clsmus" onclick="cMusicQuiz()"><img src="classicalmusicquiz.png" alt="">
+            <div class="topics">Indian classical music</div>
+        </div>
+        <div class="cont" id="music" onclick="musicQuiz()"><img src="musicquiz.png" alt="">
+            <div class="topics">music</div>
+        </div>
+        <div class="cont" id="bollywood" onclick="bollywoodQuiz()"><img src="bollywoodquiz.png" alt="">
+            <div class="topics">bollywood</div>
+        </div>
+        <div class="cont" id="tech" onclick="techQuiz()"><img src="techquiz.png" alt="">
+            <div class="topics">technology</div>
+        </div>
+        <div class="cont" id="sports" onclick="sportsQuiz()"><img src="sports quiz.png" alt="">
+            <div class="topics">sports</div>
+        </div>
+        <div class="cont" id="curraff" onclick="cAffairsQuiz()"><img src="current affairs quiz.png" alt="">
+            <div class="topics">current affairs</div>
+        </div>
+        <div class="cont" id="langs" onclick="langQuiz()"><img src="languages quiz.png" alt="">
+            <div class="topics">languages</div>
+        </div>
+        <div class="cont" id="hindhis" onclick="hinduQuiz()"><img src="hinduquiz.png" alt="">
+            <div class="topics">hindu history</div>
+        </div>
+        <div class="cont" id="popcult" onclick="popQuiz()"><img src="pop culture quiz.png" alt="">
+            <div class="topics">pop culture</div>
+        </div>
+        <div class="cont" id="mvsntvs" onclick="movieQuiz()"><img src="movies and tv shows quiz.png" alt="">
+            <div class="topics">Movies and tv shows</div>
+        </div>
+        <div class="cont" id="health" onclick="healthQuiz()"><img src="health.png" alt="">
+            <div class="topics">Health and fitness</div>
+        </div>
+    </div>
+
+<center>    <div class="quizBox" id="quizBox">
+    <center><div class="instruction">Always submit pefore proceeding with the next question</div></center>
+    <center><div class="que" id="questionBox">This is a dummy question</div></center>
+    <center><div class="colBox">
+        <input name="opt" type="radio" id="first" value="a" class="options" required>
+        <label for="first">Testing 1</label>
+    </div>
+    <div class="colBox">
+        <input name="opt" type="radio" id="second" value="b" class="options " required>
+        <label for="second">Testing 2</label>
+    </div>
+    <div class="colBox">
+        <input name="opt" type="radio" id="third" value="c"  class="options "required>
+        <label for="third">Testing 3</label>
+    </div>
+    <div class="colBox">
+        <input name="opt" type="radio" id="fourth" value="d" class="options " required>
+        <label for="fourth">Testing 4</label>
+    </div></center>
+   <div class="btn">
+    <div class="button" id="prevBtn">Previous</div>
+    <div  class="button" id="submitBtn">Submit</div>
+    <div class="button" class="next-btn" id="nextButton">next</div>
+
+   </div>
+   
+   
+</div></center>
+
+</body>
+
+ <script>
+const params = new URLSearchParams(window.location.search);
+const name = params.get('name');
+
+// Display the username on the page
+const nameDisplay = document.getElementById('name');
+if (name) {
+    nameDisplay.textContent = `Hello, ${name}!`;
+} else {
+    nameDisplay.textContent = 'Hello, Guest!';
+}
+</script>
+
+
+
+
+
+<script src="music.js"></script>
+<script src="cAffairsQuiz.js"></script>
+<script src="chemQuiz.js"></script>
+<script src="bioQuiz.js"></script>
+<script src="bollywoodQuiz.js"></script>
+<script src="phyQuiz.js"></script>
+<script src="mathQuiz.js"></script>
+<script src="cMusic.js"></script>
+<script src="music.js"></script>
+<script src="techQuiz.js"></script>
+<script src="sportsQuiz.js"></script>
+<script src="popQuiz.js"></script>
+<script src="movieQuiz.js"></script>
+<script src="langQuiz.js"></script>
+<script src="indLiteratureQuiz.js"></script>
+<script src="historyQuiz.js"></script>
+<script src="hinduQuiz.js"></script>
+<script src="healthQuiz.js"></script>
+<script src="geographyQuiz.js"></script>
+<script src="artQuiz.js"></script>
+
+
+
+
+</html>

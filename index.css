@@ -1,0 +1,107 @@
+:root {
+    --color: #f9b728;
+    --seccolor:	#ffd94d;
+    --tertcolor: #eadbc1;
+    --quadcolor: #719331;
+    --pentcolor:#59712d;
+    --hexcolor: #FFFACD
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  
+}
+
+.logo {
+    font-family: "anton", serif;
+    font-size: 10vh;
+    color: var(--pentcolor);
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: var(--quadcolor);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.otherbuttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20vw;
+    font-size: 5vh;
+    cursor: pointer;
+    color: maroon
+}
+
+.b1,
+.b2,
+.b3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.otherbuttons span {
+    opacity: 0;
+    font-size: 20px;
+    font-family: "anton", serif;
+    color: var(--quadcolor);
+    transition: all 0.3s;
+}
+
+.b1:hover span.text1 {
+    opacity: 1;
+}
+
+.b2:hover span.text2 {
+    opacity: 1;
+}
+
+.b3:hover span.text3 {
+    opacity: 1;
+}
+
+div.intro{width: 50vw;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+text-align: center;
+font-family: "Fira Sans" , serif;
+margin-top: 15vh;
+font-size: 25px;
+font-weight: 500;
+
+padding: 3vw 2.5vh;
+color: black;
+}
+
+.start{width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-family: "Fira Sans" , serif;
+    margin-top: 10vh;
+    font-size: 20px;
+    font-weight: 800;
+    border: 3px solid var(--pentcolor);
+    border-radius: 20px;
+   padding: 2vh 2vh;
+    color: white;
+    background-color: maroon;
+cursor: pointer;}
+.start:hover{background-color: red;}

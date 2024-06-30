@@ -1,0 +1,197 @@
+function mathQuiz() {
+    const mathQuestions = [
+        {
+            question: "What is the value of π (pi) approximately?",
+            a: "2.14",
+            b: "3.14",
+            c: "4.14",
+            d: "5.14",
+            correct: "b",
+        },
+        {
+            question: "What is 2 + 2?",
+            a: "3",
+            b: "4",
+            c: "5",
+            d: "6",
+            correct: "b",
+        },
+        {
+            question: "What is the square root of 16?",
+            a: "2",
+            b: "3",
+            c: "4",
+            d: "5",
+            correct: "c",
+        },
+        {
+            question: "What is 5! (5 factorial)?",
+            a: "60",
+            b: "100",
+            c: "120",
+            d: "140",
+            correct: "c",
+        },
+        {
+            question: "What is the sum of the angles in a triangle?",
+            a: "180 degrees",
+            b: "90 degrees",
+            c: "360 degrees",
+            d: "270 degrees",
+            correct: "a",
+        },
+        {
+            question: "What is 10 divided by 2?",
+            a: "2",
+            b: "3",
+            c: "4",
+            d: "5",
+            correct: "d",
+        },
+        {
+            question: "What is the area of a circle with radius 1?",
+            a: "π",
+            b: "2π",
+            c: "π^2",
+            d: "4π",
+            correct: "a",
+        },
+        {
+            question: "What is the perimeter of a square with side length 4?",
+            a: "8",
+            b: "12",
+            c: "16",
+            d: "20",
+            correct: "c",
+        },
+        {
+            question: "What is the solution to the equation 3x = 9?",
+            a: "x = 1",
+            b: "x = 2",
+            c: "x = 3",
+            d: "x = 4",
+            correct: "c",
+        },
+        {
+            question: "What is the value of the expression 2^3?",
+            a: "4",
+            b: "6",
+            c: "8",
+            d: "10",
+            correct: "c",
+        },
+        {
+            question: "What is 7 times 6?",
+            a: "42",
+            b: "46",
+            c: "48",
+            d: "52",
+            correct: "a",
+        },
+        {
+            question: "What is the result of 15 - 9?",
+            a: "5",
+            b: "6",
+            c: "7",
+            d: "8",
+            correct: "b",
+        },
+        {
+            question: "What is the value of the expression 4 + 5 * 2?",
+            a: "18",
+            b: "14",
+            c: "13",
+            d: "10",
+            correct: "b",
+        },
+        {
+            question: "What is the product of 9 and 3?",
+            a: "18",
+            b: "21",
+            c: "24",
+            d: "27",
+            correct: "d",
+        },
+        {
+            question: "What is the greatest common divisor of 12 and 18?",
+            a: "2",
+            b: "3",
+            c: "6",
+            d: "9",
+            correct: "c",
+        },
+    ];
+  
+   
+      
+  
+      let index = 0;
+      let correct = 0;
+      let total = mathQuestions.length;
+      let questionBox = document.getElementById("questionBox");
+      let allInputs = document.querySelectorAll(".options");
+  
+      const loadQuestion = () => {
+          if (total === index) {
+              return quizEnd();
+          }
+          reset();
+          const data = mathQuestions[index];
+          questionBox.innerHTML = `${index + 1}) ${data.question}`;
+          allInputs[0].nextElementSibling.innerText = data.a;
+          allInputs[1].nextElementSibling.innerText = data.b;
+          allInputs[2].nextElementSibling.innerText = data.c;
+          allInputs[3].nextElementSibling.innerText = data.d;
+      };
+  
+      document.getElementById("nextButton").onclick = function() {
+          const data = mathQuestions[index];
+          const ans = getAnswer();
+          if (ans === data.correct) {
+              correct++;
+          }
+          index++;
+          loadQuestion();
+      };
+  
+      const getAnswer = () => {
+          let ans;
+          allInputs.forEach((input) => {
+              if (input.checked) {
+                  ans = input.value;
+              }
+          });
+          return ans;
+      };
+  
+      const reset = () => {
+          allInputs.forEach((input) => {
+              input.checked = false;
+          });
+      };
+      
+     
+  
+      const quizEnd = () => {
+        let percentage = (correct / total) * 100;
+        percentage = percentage.toFixed(1);
+    
+        document.getElementsByClassName("quizBox")[0].innerHTML = `
+            <div class="col" style="display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-transform: capitalize;
+                font-family: 'Poppins', serif;
+                flex-direction: column;
+                gap: 1vh;">
+                <h1>${percentage}%</h1>
+                 <br>
+                <h3 class="w-100">Oh, you've scored ${correct} / ${total}</h3>
+            </div>
+        `;
+    };
+    
+      loadQuestion();
+  }
+  mathQuiz()
