@@ -37,24 +37,7 @@ text-transform: capitalize;
 font-size: 15px;
 font-weight: 600;}
 
-.orLogin{width: 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-    margin-top: 5vh;
-    font-size: 20px;
-    font-weight: 800;
-    border: 1px solid var(--pentcolor);
-    border-radius: 10px;
-   padding: 1vh 1vh;
-    color: var(--quadcolor);
-    background-color: var(--tertcolor);
-cursor: pointer;
-font-family: "poppins",serif;}
 
-.orLogin:hover{background-color: var(--color);}
 
 .submit{width: 15vw;
     display: flex;
@@ -74,6 +57,12 @@ cursor: pointer;
 font-family: "poppins",serif;}
 
 .submit:hover{background-color: var(--seccolor);}
+
+@media screen and (max-width: 480px) {
+    .loginsignup form input {
+        width: 90vw; 
+    }
+}
 
 
 

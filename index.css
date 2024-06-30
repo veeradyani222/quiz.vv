@@ -105,3 +105,14 @@ color: black;
     background-color: maroon;
 cursor: pointer;}
 .start:hover{background-color: red;}
+
+@media screen and (max-width:480px) {
+
+    div.intro {width: 90vw; 
+        margin-top: 5vh;
+        }
+
+        .start{width: 40vw;
+            margin-top: 5vh;}
+    
+}
