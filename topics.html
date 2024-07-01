@@ -13,12 +13,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 <!-- above ones for the poppins font -->
 
 <body>
     <div id="name"></div>
-   <div class="headingbox"> <div class="heading">Select a topic to start the quiz</div></div>
+    <div class="headingbox">
+        <div class="heading">Select a topic to start the quiz</div>
+    </div>
     <div class="container">
         <div class="cont" id="maths" onclick="mathQuiz()">
             <div class="box"><img src="mathsquiz.png" alt=""></div>
@@ -79,49 +83,90 @@
             <div class="topics">Health and fitness</div>
         </div>
     </div>
+    <div class="headingbox1">
+        <div class="heading1">Take the quizzes below to make important decisions</div>
+    </div>
+    <div class="container1">
 
-<center>    <div class="quizBox" id="quizBox">
-    <center><div class="instruction">Always submit pefore proceeding with the next question</div></center>
-    <center><div class="que" id="questionBox">This is a dummy question</div></center>
-    <center><div class="colBox">
-        <input name="opt" type="radio" id="first" value="a" class="options" required>
-        <label for="first">Testing 1</label>
-    </div>
-    <div class="colBox">
-        <input name="opt" type="radio" id="second" value="b" class="options " required>
-        <label for="second">Testing 2</label>
-    </div>
-    <div class="colBox">
-        <input name="opt" type="radio" id="third" value="c"  class="options "required>
-        <label for="third">Testing 3</label>
-    </div>
-    <div class="colBox">
-        <input name="opt" type="radio" id="fourth" value="d" class="options " required>
-        <label for="fourth">Testing 4</label>
-    </div></center>
-   <center><div class="btn">
-    <div class="button" id="prevBtn">Previous</div>
-    <div  class="button" id="submitBtn">Submit</div>
-    <div class="button" class="next-btn" id="nextButton">next</div>
+        <div class="cont1"><img src="intuitionquiz.jpg" alt="">
+            <div class="topics1">Should I go with my intuition or be practical?</div>
+        </div>
+        <div class="cont1"><img src="therapyquiz.jpg" alt="">
+            <div class="topics1">Do i need to seek professional help?</div>
+        </div>
+        <div class="cont1"><img src="personalityquiz.jpg" alt="">
+            <div class="topics1">What is my personality type?</div>
+        </div>
+        <div class="cont1"><img src="partnerquiz.jpg" alt="">
+            <div class="topics1">What kind of partner should I seek?</div>
+        </div>
+        <div class="cont1"><img src="outfitquiz.jpg" alt="">
+            <div class="topics1">what kind of outfit should i wear today?</div>
+        </div>
+        <div class="cont1"><img src="careersquiz.jpg" alt="">
+            <div class="topics1">What career path will be the best for me?</div>
+        </div>
+        <div class="cont1"><img src="#" alt="">
+            <div class="topics1">more to come</div>
+        </div>
+        <div class="cont1"><img src="#" alt="">
+            <div class="topics1">more to come</div>
+        </div>
 
-   </div></center>
-   
-   
-</div></center>
+    </div>
+
+    <center>
+        <div class="quizBox" id="quizBox">
+            <center>
+                <div class="instruction">Always submit pefore proceeding with the next question</div>
+            </center>
+            <center>
+                <div class="que" id="questionBox">This is a dummy question</div>
+            </center>
+            <center>
+                <div class="colBox">
+                    <input name="opt" type="radio" id="first" value="a" class="options" required>
+                    <label for="first">Testing 1</label>
+                </div>
+                <div class="colBox">
+                    <input name="opt" type="radio" id="second" value="b" class="options " required>
+                    <label for="second">Testing 2</label>
+                </div>
+                <div class="colBox">
+                    <input name="opt" type="radio" id="third" value="c" class="options " required>
+                    <label for="third">Testing 3</label>
+                </div>
+                <div class="colBox">
+                    <input name="opt" type="radio" id="fourth" value="d" class="options " required>
+                    <label for="fourth">Testing 4</label>
+                </div>
+            </center>
+            <center>
+                <div class="btn">
+                    <div class="button" id="prevBtn">Previous</div>
+                    <div class="button" id="submitBtn">Submit</div>
+                    <div class="button" class="next-btn" id="nextButton">next</div>
+
+                </div>
+            </center>
+
+
+        </div>
+    </center>
 
 </body>
 
- <script>
-const params = new URLSearchParams(window.location.search);
-const name = params.get('name');
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
 
-// Display the username on the page
-const nameDisplay = document.getElementById('name');
-if (name) {
-    nameDisplay.textContent = `Hello, ${name}!`;
-} else {
-    nameDisplay.textContent = 'Hello, Guest!';
-}
+    // Display the username on the page
+    const nameDisplay = document.getElementById('name');
+    if (name) {
+        nameDisplay.textContent = `Hello, ${name}!`;
+    } else {
+        nameDisplay.textContent = 'Hello, Guest!';
+    }
 </script>
 
 
