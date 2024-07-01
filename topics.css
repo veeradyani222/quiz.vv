@@ -16,11 +16,11 @@
     font-weight: 700;
     padding: 2vh 5vh;}
 .heading{display: flex;
-justify-content: center;
-font-family:"poppins",serif ;
-font-size: 5vh;
-font-weight: 700;
-padding: 5vh 5vh;}
+    justify-content: center;
+    font-family:"poppins",serif ;
+    font-size: 4.5vh;
+    font-weight: 700;
+    padding: 5vh 5vh;;}
 
 .container{display: flex;
 justify-content: center;
@@ -159,6 +159,38 @@ color: #fff;}
 .button:hover{background-color: lightblue;
 }
 
+@media screen and(max-width:480px){
+
+    #name{
+        align-items: center;
+        }
+    .heading{
+        justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5vw 5vw;}
+    
+    .container{display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+    
+    .cont{display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 3vh 2vh;
+    width: 15vw;
+    height: 20vw;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ;
+    box-shadow: 1px 1px 5px;
+    
+    
+}
 
 
 
