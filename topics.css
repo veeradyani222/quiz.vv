@@ -164,6 +164,9 @@ color: #fff;}
     #name{
         align-items: center;
         }
+        .headingbox{justify-content: center;
+            align-items: center;
+            text-align: center}
     .heading{
         justify-content: center;
     align-items: center;
