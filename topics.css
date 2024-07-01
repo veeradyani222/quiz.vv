@@ -166,18 +166,17 @@ color: #fff;}
         }
         .headingbox{justify-content: center;
             align-items: center;
-            text-align: center}
+            text-align: center;}
     .heading{
+        display: flex;
         justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5vw 5vw;}
+        font-family: "poppins", serif;
+        font-size: 4.5vh;
+        font-weight: 700;
+        padding: 5vh 5vh;
+        text-align: center;}
     
-    .container{display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    .container{gap: 2vh;
     }
     
     .cont{display: flex;
@@ -185,7 +184,7 @@ color: #fff;}
     text-align: center;
     position: relative;
     margin: 3vh 2vh;
-    width: 15vw;
+    width: 20vw;
     height: 20vw;
     background-color: #fff;
     cursor: pointer;
@@ -195,7 +194,7 @@ color: #fff;}
     
 }
 
-
+}
 
 
     
