@@ -1,98 +1,111 @@
 :root {
     --color: #f9b728;
-    --seccolor:	#ffd94d;
+    --seccolor: #ffd94d;
     --tertcolor: #eadbc1;
     --quadcolor: #719331;
-    --pentcolor:#59712d;
+    --pentcolor: #59712d;
     --hexcolor: #FFFACD;
 }
 
 
 
-#name{display: flex;
+#name {
+    display: flex;
     justify-content: center;
-    font-family:"poppins",serif ;
+    font-family: "poppins", serif;
     font-size: 3.5vh;
     font-weight: 700;
-    padding: 2vh 5vh;}
-.heading{display: flex;
+    padding: 2vh 5vh;
+}
+
+.heading {
+    display: flex;
     justify-content: center;
-    font-family:"poppins",serif ;
+    font-family: "poppins", serif;
     font-size: 4.5vh;
     font-weight: 700;
-    padding: 5vh 5vh;;}
-
-.container{display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-flex-direction: row;
+    padding: 5vh 5vh;
+    ;
 }
 
-.cont{display: flex;
-justify-content: center;
-text-align: center;
-position: relative;
-margin: 3vh 2vh;
-width: 15vw;
-height: 20vw;
-background-color: #fff;
-cursor: pointer;
-transition: all 0.3s ;
-box-shadow: 1px 1px 5px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.cont .topics{
+.cont {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 3vh 2vh;
+    width: 15vw;
+    height: 20vw;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px;
+}
+
+.cont .topics {
     margin-top: 15vw;
-position: absolute;
-font-family: "poppins",serif;
-color:black;
-font-size: 15px;
-font-weight: 700;
-z-index: 1;
-text-transform: capitalize;
-background-color: #fff;
+    position: absolute;
+    font-family: "poppins", serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    z-index: 1;
+    text-transform: capitalize;
+    background-color: #fff;
 
-transition: all 0.3s ;
+    transition: all 0.3s;
 }
 
-.cont img{
+.cont img {
     height: 30vh;
 }
 
-.cont:hover{transform: scale(1.05);
+.cont:hover {
+    transform: scale(1.05);
 
 }
 
-.cont:hover .topics{transform: scale(1.05);
-  
-    }
+.cont:hover .topics {
+    transform: scale(1.05);
 
-    .main{height: 40px;
+}
+
+.main {
+    height: 40px;
     width: 40px;
-color: #719331;}
+    color: #719331;
+}
 
-.quizBox{
-      width: 60vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-color: #fff;
-      margin-top: 40vh;
-      margin-bottom: 20vh;
-      text-align: center;
-      display: none;
-     
-      
-      
+.quizBox {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 40vh;
+    margin-bottom: 20vh;
+    text-align: center;
+    display: none;
+
+
+
 
 }
 
 
 
-.que {width: 55vw;
-   
+.que {
+    width: 55vw;
+
     margin-top: 3vh;
     font-size: 30px;
     font-family: "poppins", serif;
@@ -101,33 +114,34 @@ color: #719331;}
     align-items: center;
     text-align: center;
     display: flex;
-    padding-top:  2vh
-
+    padding-top: 2vh
 }
 
 
 
-.colBox{
-    list-style-type: none ;
+.colBox {
+    list-style-type: none;
     width: 50vw;
-    margin:2vh 3vh;
+    margin: 2vh 3vh;
     padding: 1vw 1vw;
     height: 5vh;
     font-size: 20px;
-  font-family: "poppins",serif;
+    font-family: "poppins", serif;
     font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-border: 2px solid #808080;
+    border: 2px solid #808080;
 
 }
 
-.colBox:hover{background-color: #000000;
-color: #fff;}
+.colBox:hover {
+    background-color: #000000;
+    color: #fff;
+}
 
-.btn{
+.btn {
     width: 50vw;
     display: flex;
     flex-direction: row;
@@ -141,62 +155,124 @@ color: #fff;}
     text-transform: capitalize;
 }
 
-.button{padding: 1vh 1vh;
+.button {
+    padding: 1vh 1vh;
     font-size: 15px;
-    font-family:"poppins",serif;
+    font-family: "poppins", serif;
     font-weight: 700;
     border: 2px solid black;
     width: 20%;
-    
+
 }
 
-.instruction{font-size: 15px;
+.instruction {
+    font-size: 15px;
     padding: 1vh 1vh;
     border: 1px solid black;
-    font-family: "poppins",serif;
+    font-family: "poppins", serif;
 }
 
-.button:hover{background-color: lightblue;
+.button:hover {
+    background-color: lightblue;
 }
 
-@media screen and(max-width:480px){
+@media only screen and (max-width:480px) {
 
-    #name{
+    #name {
         align-items: center;
-        }
-        .headingbox{justify-content: center;
-            align-items: center;
-            text-align: center;}
-    .heading{
-        display: flex;
-        justify-content: center;
-        font-family: "poppins", serif;
-        font-size: 4.5vh;
-        font-weight: 700;
-        padding: 5vh 5vh;
-        text-align: center;}
-    
-    .container{gap: 2vh;
     }
+
+    .headingbox {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .heading {
+
+        text-align: center;
+    }
+
+    .container {
+        gap: 5vw;
+        flex-wrap: wrap;
+    }
+
+    .cont {
+
+        width: 35vw;
+        height: 45vw;
+
+    }
+
+    .cont .topics {
+        margin-top: 90%;
+        padding: 2% 2%;
+        font-size: 13px;
+
+
+    }
+
+    .cont img {
+        height: 90%;
+        width: 90%;
+    }
+
+
+    .main {
+        height: 40px;
+        width: 40px;
+        color: #719331;
+    }
+
+    .quizBox {
+        width: 90vw;
+        margin-top: 50vh;
+        margin-bottom: 20vh;
+    }
+
+
+    .que {
+        width: 100%;
+
+        margin-top: 3vh;
+        font-size: 17px;
+
+        padding-top: 2vh
+    }
+
+
+
+    .colBox {
+
+        width: 90%;
+        margin: 2vh 2vh;
+        padding: 1vw 1vw;
+        height: 5vh;
+        font-size: 15px;
+
+
+    }
+
+    .btn {
+        width: 100%;
+
+    }
+
+    .button {
+        font-size: 15px;
+
+        width: 25%;
+
+    }
+
+    .instruction {
+        font-size: 10px;
+
+    }
+
     
-    .cont{display: flex;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    margin: 3vh 2vh;
-    width: 20vw;
-    height: 20vw;
-    background-color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ;
-    box-shadow: 1px 1px 5px;
-    
-    
+
+
+
 }
-
-}
-
-
-    
-
-

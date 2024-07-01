@@ -560,35 +560,35 @@ function musicQuiz() {
         
             document.querySelector(".quizBox").innerHTML = `
                 <div class="col" style="display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    text-transform: capitalize;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-transform: capitalize;
+                font-family: 'Poppins', serif;
+                flex-direction: column;
+                gap: 1vh;
+                border: 2px solid black;
+                padding: 2vh 2vh;">
+                <h1 style="width: 50%;
                     font-family: 'Poppins', serif;
-                    flex-direction: column;
-                    gap: 1vh;
-                    border: 3px solid black;
-                    padding: 2vh 2vh;">
-                    <h1 style="width: 15vw;
+                    color: black;
+                    background-color: lightcyan;
+                    border: 1px solid black;
+                   
+                    cursor: pointer;">${percentage}%</h1>
+                <br>
+                <h3 class="w-100" >Oh, you've scored ${correct} / ${total}</h3>
+                <div class="reloadButton" id="reloadButton" onclick="reloadButton()"
+                    style="width: 30% ;
                         font-family: 'Poppins', serif;
                         color: black;
-                        background-color: lightcyan;
+                        background-color: lightgreen;
                         border: 2px solid black;
-                        border-radius: 50px;
-                        cursor: pointer;">${percentage}%</h1>
-                    <br>
-                    <h3 class="w-100">Oh, you've scored ${correct} / ${total}</h3>
-                    <div class="reloadButton" id="reloadButton" onclick="reloadButton()"
-                        style="width: 5vw;
-                            font-family: 'Poppins', serif;
-                            color: black;
-                            background-color: lightgreen;
-                            border: 2px solid black;
-                            border-radius: 20px;
-                            cursor: pointer;">
-                        Okay
-                    </div>
-                </div>`;
+                        
+                        cursor: pointer;">
+                    Okay
+                </div>
+            </div>`;
                 document.getElementById("reloadButton").onclick = reloadButton; // Bind reloadButton function to reloadButton element
         };
         

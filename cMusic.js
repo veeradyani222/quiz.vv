@@ -612,7 +612,7 @@ function cMusicQuiz() {
         percentage = percentage.toFixed(1);
     
         document.querySelector(".quizBox").innerHTML = `
-            <div class="col" style="display: flex;
+         <div class="col" style="display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
@@ -620,24 +620,24 @@ function cMusicQuiz() {
                 font-family: 'Poppins', serif;
                 flex-direction: column;
                 gap: 1vh;
-                border: 3px solid black;
+                border: 2px solid black;
                 padding: 2vh 2vh;">
-                <h1 style="width: 15vw;
+                <h1 style="width: 50%;
                     font-family: 'Poppins', serif;
                     color: black;
                     background-color: lightcyan;
-                    border: 2px solid black;
-                    border-radius: 50px;
+                    border: 1px solid black;
+                    
                     cursor: pointer;">${percentage}%</h1>
                 <br>
-                <h3 class="w-100">Oh, you've scored ${correct} / ${total}</h3>
+                <h3 class="w-100" >Oh, you've scored ${correct} / ${total}</h3>
                 <div class="reloadButton" id="reloadButton" onclick="reloadButton()"
-                    style="width: 5vw;
+                    style="width: 30% ;
                         font-family: 'Poppins', serif;
                         color: black;
                         background-color: lightgreen;
                         border: 2px solid black;
-                        border-radius: 20px;
+                        
                         cursor: pointer;">
                     Okay
                 </div>
