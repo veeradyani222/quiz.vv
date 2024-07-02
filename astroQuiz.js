@@ -177,7 +177,7 @@ function astroQuiz(){
     
     // Function to handle quiz end
     const quizEnd = () => {
-        const careerScores = { a: 0, b: 0, c: 0, d: 0 };
+        const astroScores = { a: 0, b: 0, c: 0, d: 0 };
     
         // Calculate scores based on user answers
         selectedQuestions.forEach(question => {
