@@ -149,8 +149,8 @@ border: 13px solid pink;}
     list-style-type: none;
     width: 50vw;
     margin: 2vh 3vh;
-    padding: 1vw 1vw;
-    height: 5vh;
+    padding: 2vw 2vw;
+    
     font-size: 20px;
     font-family: "poppins", serif;
     font-weight: 700;
@@ -273,8 +273,7 @@ border: 13px solid pink;}
 
         width: 90%;
         margin: 2vh 2vh;
-        padding: 1vw 1vw;
-        height: 5vh;
+        
         font-size: 15px;
 
 
@@ -301,10 +300,10 @@ border: 13px solid pink;}
     .cont1{ 
         margin: 3vh 2vh;
         width: 95vw;
-        height: 65vw;
+        height: 60vw;
        }
 
-        .cont1 .topics1{margin-top: 55%;
+        .cont1 .topics1{margin-top: 45%;
             padding: 2% 2%;
             
             font-size: 15px;
