@@ -76,7 +76,7 @@
     transition: all 0.3s;
 }
 
-.cont1 .topics1{margin-top: 95%;
+.cont1 .topics1{margin-top: 25vw;
     position: absolute;
     font-family: "poppins", serif;
     color: black;
@@ -303,7 +303,7 @@ border: 13px solid pink;}
         height: 60vw;
        }
 
-        .cont1 .topics1{margin-top: 95%;
+        .cont1 .topics1{margin-top: 65%;
             padding: 2% 2%;
             
             font-size: 15px;
